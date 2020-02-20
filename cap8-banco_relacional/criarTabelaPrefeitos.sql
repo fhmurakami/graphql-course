@@ -4,5 +4,5 @@ CREATE TABLE IF NOT EXISTS prefeitos (
     cidade_id INT UNSIGNED,
     PRIMARY KEY (id),
     UNIQUE KEY (cidade_id),
-    FOREIGN KEY (cidade_id), REFERENCES cidades (id)
+    FOREIGN KEY (cidade_id) REFERENCES cidades (id)
 );
